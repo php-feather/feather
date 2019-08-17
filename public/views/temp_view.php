@@ -22,10 +22,10 @@ $user;
             <div class="row h-100">
                 <div class="col-md-8 my-auto mx-auto text-center">
                     
-                    <img src="<?=asset('img/feather.png')?>" alt="feather" title="feather" style="width:64px;"/>
+                    <img src="<?=asset('img/feather2.png')?>" alt="feather" title="feather" style="width:64px;"/>
                     
-                    <p class="display-1">Feather App<p>
-                    <p class="display-4">A lightweight, super fast PHP Routing Framework</p>
+                    <p class="display-1">Feather Ignite<p>
+                    <p class="display-4">A lightweight, super fast PHP Framework</p>
                     
                 </div>
                 
