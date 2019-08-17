@@ -1,0 +1,26 @@
+{
+    "name": "fcarbah/feather-app",
+    "description": "Feather Ignite - Lightweight PHP Framework",
+    "license": "MIT",
+    
+    "repositories": [
+        { "type": "vcs", "url": "https://github.com/fcarbah/feather" }
+    ],
+
+    "authors": [
+        {
+            "name": "Francis Carbah",
+            "email": "afrounit@hotmail.com"
+        }
+    ],
+    "require": {
+        "fcarbah/feather": "dev-master",
+        "illuminate/database": "^5.8",
+        "nesbot/carbon": "^2.22"
+    },
+    "autoload": {
+        "psr-4": {
+            "Feather\\Ignite\\": ""
+        }
+    }
+}
