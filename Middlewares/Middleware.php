@@ -7,12 +7,11 @@
  */
 
 namespace Feather\Ignite\Middlewares;
-use Feather\Init\Middleware\Middleware;
 /**
  * Description of Middleware
  *
  * @author fcarbah
  */
-abstract class Middleware extends Middleware {
+abstract class Middleware extends \Feather\Init\Middleware\Middleware {
     //put your code here
 }
