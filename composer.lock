@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f8571ddc72cdb93372827fb35e5f472",
+    "content-hash": "803bdeb5936f6b931bd6f294a0d5da4a",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -356,12 +356,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/init.git",
-                "reference": "b4ace4ee3148fb93aa9194bc879cb29fc3367dd5"
+                "reference": "b4035ca67015faa094f2221bfb2792d38869d00a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/init/zipball/b4ace4ee3148fb93aa9194bc879cb29fc3367dd5",
-                "reference": "b4ace4ee3148fb93aa9194bc879cb29fc3367dd5",
+                "url": "https://api.github.com/repos/php-feather/init/zipball/b4035ca67015faa094f2221bfb2792d38869d00a",
+                "reference": "b4035ca67015faa094f2221bfb2792d38869d00a",
                 "shasum": ""
             },
             "type": "library",
@@ -381,7 +381,7 @@
                 }
             ],
             "description": "Feather Init - Lightweight PHP Routing Engine",
-            "time": "2019-08-19T03:00:15+00:00"
+            "time": "2019-08-19T03:20:19+00:00"
         },
         {
             "name": "psr/container",
