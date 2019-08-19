@@ -1,4 +1,11 @@
 {
-    "name": "feather/ignite",
-    "private": true
+    "package": {
+        "name": "php-feather/ignite",
+        "version": "1.0.0",
+        "source": {
+          "url": "https://github.com/php-feather/ignite.git",
+          "type": "git",
+          "reference": "master"
+        }
+    }
 }
