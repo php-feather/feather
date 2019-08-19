@@ -18,6 +18,5 @@
         "psr-4": {
             "Feather\\Ignite\\": ""
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
