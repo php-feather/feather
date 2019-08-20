@@ -7,7 +7,7 @@
  */
 
 namespace Feather\Ignite\Controllers;
-use Feather\Init\Controllers\Controller;
+use Feather\Init\Controller\Controller;
 
 /**
  * Description of BaseController
