@@ -458,12 +458,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/init.git",
-                "reference": "0dc1845f53efd117fbf6bb91664a2f4438e59b24"
+                "reference": "55ad5e07ab05ebd0d9a3ee6eb1af9dd9abc99beb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/init/zipball/0dc1845f53efd117fbf6bb91664a2f4438e59b24",
-                "reference": "0dc1845f53efd117fbf6bb91664a2f4438e59b24",
+                "url": "https://api.github.com/repos/php-feather/init/zipball/55ad5e07ab05ebd0d9a3ee6eb1af9dd9abc99beb",
+                "reference": "55ad5e07ab05ebd0d9a3ee6eb1af9dd9abc99beb",
                 "shasum": ""
             },
             "require": {
@@ -486,7 +486,7 @@
                 }
             ],
             "description": "Feather Init - Lightweight PHP Routing Engine",
-            "time": "2019-08-20T23:30:30+00:00"
+            "time": "2019-08-21T00:20:52+00:00"
         },
         {
             "name": "psr/container",
