@@ -15,5 +15,6 @@ use Feather\Init\Controller\Controller;
  * @author fcarbah
  */
 class BaseController extends Controller {
-
+    protected $viewPath = VIEWS_PATH;
+    public $validateAnnotations=false;
 }

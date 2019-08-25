@@ -11,6 +11,8 @@
     ],
     "require": {
         "php-feather/init": "dev-master",
+        "php-feather/cache": "dev-master",
+        "php-feather/session": "dev-master",
         "illuminate/database": "^5.8",
         "nesbot/carbon": "^2.22"
     },

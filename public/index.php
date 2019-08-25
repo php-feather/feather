@@ -4,17 +4,18 @@ require '../vendor/autoload.php';
 require '../config/config.php';
 require '../config/constants.php';
 
+use Feather\Ignite\App;
 
-Feather\Init\App::startSession();
+
+App::startSession($session_lifetime, $session_driver, $session_db_type, $session_path, $session_db_config);
 
 require '../bootstrap/eloquent.php';
 require '../routes/routes.php';
 require '../helpers/view_helpers.php';
 
-$router = \Feather\Init\Http\Router::getInstance();
-$router->setDefaultController('Feather\Ignite\Controllers\WelcomeController');
+$app = App::getInstance();
 
-$app = Feather\Init\App::getInstance();
+$app->init($ctrl_namespace,$default_controller,VIEWS_PATH);
 
 $app->setErrorPage('errors/errors.php');
 
