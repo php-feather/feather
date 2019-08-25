@@ -1,7 +1,5 @@
 /nbproject/private/
 nbproject/
 vendor/
-storage/*
-!storage/.gitkeep
 public/views/temp_view.php
 public/views/temp_wrapper_view.php

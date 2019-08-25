@@ -68,6 +68,7 @@ class App {
     protected $router;
     protected $errorPage;
     protected $errorHandler;
+    protected $cacheHandler;
 
     private static $self;
     
@@ -95,7 +96,7 @@ class App {
         $this->response->setViewPath($viewPath);
     }
     
-    public static function log($msg,$filePath=STORAGE_PATH.'/app_log'){
+    public static function log($msg,$filePath=STORAGE_PATH.'/logs/app_log'){
         error_log($msg,3,$filePath);
     }
     
@@ -141,38 +142,65 @@ class App {
         }
     }
     
-    public static function startSession($lifetime,$driver,$type,$path,$config){
+    public static function startSession(){
+        
+        $config = include 'config/session.php';
         
         if(!isset($_SESSION)){
-            self::initSession($driver, $type, $path, $config);
-            session_set_cookie_params($lifetime, '/');
+            self::initSession($config);
+            session_set_cookie_params($config['lifetime'], '/');
             session_start();
             @session_regenerate_id(true);
         }
         else{
-            setcookie(session_name(),session_id(),time()+$lifetime);
+            setcookie(session_name(),session_id(),time()+$config['lifetime']);
         }
         
     }
     
-    
-    protected static function initSession($driver,$type,$path,$config){
+    public function setCaching(){
         
-        switch($driver){
+        $config = include 'config/cache.php';
+        
+        switch($config['driver']){
+            
             case 'file':
             default :
-                return self::fileSession($path);
+                $this->cacheHandler = \Feather\Cache\FileCache::getInstance($config['filePath']);
+                break;
+            
             case 'database':
-                return $this->dbSession($type,$config);   
+                $dbConfig = $config['dbConfig'];
+                $this->cacheHandler = \Feather\Cache\DatabaseCache::getInstance($dbConfig[$dbConfig['active']]); 
+                break;
+            
+            case 'redis':
+                $redisConfig = $config['redis'];
+                $this->cacheHandler = \Feather\Cache\RedisCache::getInstance($redisConfig['server'], $redisConfig['port'], $redisConfig['server'],$redisConfig['connOptions']);
+                break;
         }
-        
     }
     
-    protected static function dbSession($type,$config){
-        new \Feather\Session\Drivers\DatabaseDriver($config[$type]);
-    }
-    protected static function fileSession($path){
-        new \Feather\Session\Drivers\FileDriver($path);
+    protected static function initSession($config){
+        
+        switch($config['driver']){
+            
+            case 'file':
+            default :
+                new \Feather\Session\Drivers\FileDriver($config['filePath']);
+                break;
+            
+            case 'database':
+                $dbConfig = $config['dbConfig'];
+                new \Feather\Session\Drivers\DatabaseDriver($dbConfig[$dbConfig['ative']]);               
+                break;
+            
+            case 'redis':
+                $redisConfig = $config['redis'];
+                new \Feather\Session\Drivers\RedisDriver($redisConfig['server'], $redisConfig['port'], $redisConfig['server']);                
+                break;
+        }
+        
     }
     
 }
