@@ -171,11 +171,12 @@ class App {
         if(!isset($_SESSION)){
             self::initSession($config);
             session_set_cookie_params($config['lifetime'], '/');
+            session_name('fi_session');
             session_start();
             @session_regenerate_id(true);
         }
         else{
-            setcookie(session_name(),session_id(),time()+$config['lifetime']);
+            setcookie(session_name('fi_session'),session_id(),time()+$config['lifetime']);
         }
         
     }
