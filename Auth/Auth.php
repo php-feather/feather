@@ -9,7 +9,7 @@
 namespace Feather\Ignite\Auth;
 use Feather\Init\Http\Session;
 use Feather\Ignite\Models\User;
-define('AUTH_USER','feather_auth_user');
+
 /**
  * Description of Auth
  *
