@@ -127,6 +127,10 @@ class App {
 
     }
     
+    public function cache(){
+        return $this->cacheHandler;
+    }
+    
     public function setCustomErrorHandler(\Closure $errorhandler){
         $this->errorHandler = $errorhandler;
     }

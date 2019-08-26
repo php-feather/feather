@@ -458,12 +458,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/cache.git",
-                "reference": "967f9258182585c666a3bdf1c92e669eb87043b3"
+                "reference": "60c91784d67184a8f27589da6aca196180ebcf1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/cache/zipball/967f9258182585c666a3bdf1c92e669eb87043b3",
-                "reference": "967f9258182585c666a3bdf1c92e669eb87043b3",
+                "url": "https://api.github.com/repos/php-feather/cache/zipball/60c91784d67184a8f27589da6aca196180ebcf1c",
+                "reference": "60c91784d67184a8f27589da6aca196180ebcf1c",
                 "shasum": ""
             },
             "require": {
@@ -486,7 +486,7 @@
                 }
             ],
             "description": "Feather Cache",
-            "time": "2019-08-25T19:04:12+00:00"
+            "time": "2019-08-25T21:49:14+00:00"
         },
         {
             "name": "php-feather/init",
