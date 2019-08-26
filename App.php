@@ -89,6 +89,12 @@ class App {
         die;
     }
     
+    public function boot(){
+        require '../bootstrap/eloquent.php';
+        require '../routes/routes.php';
+        require '../helpers/view_helpers.php';
+    }
+    
     public function init($ctrlNamespace,$defaultController,$viewPath){
         $this->router->setDefaultController($defaultController);
         $this->router->setControllerNamespace($ctrlNamespace);
