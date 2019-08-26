@@ -23,7 +23,7 @@ function myErrorHandler($code,$message,$file,$line){
     
     $msg ="ERR CODE: $code\nMESSAGE:$message\nFILE:$file || $line";
 
-    $app = \Feather\Init\App::getInstance();
+    $app = App::getInstance();
     
     $app->log($msg);
 
