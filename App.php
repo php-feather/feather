@@ -146,6 +146,18 @@ class App {
         }
     }
     
+    public static function getConfig($configPath){
+        try{
+            $fullPath = stripos($configPath,'config/') === false? 'config/'.$configPath : $configPath;
+            $config = include $fullPath;
+            return $config;
+        }
+        catch(\Exception $e){
+            self::log($e->getMessage());
+            return null;   
+        }
+    }
+    
     public static function startSession(){
         
         $config = include 'config/session.php';
