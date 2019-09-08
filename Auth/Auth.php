@@ -6,9 +6,9 @@
  * and open the template in the editor.
  */
 
-namespace Feather\Ignite\Auth;
+namespace Feather\App\Auth;
 use Feather\Init\Http\Session;
-use Feather\Ignite\Models\User;
+use Feather\App\Models\User;
 
 /**
  * Description of Auth

@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-namespace Feather\Ignite\Models;
+namespace Feather\App\Models;
 
 /**
  * Description of User

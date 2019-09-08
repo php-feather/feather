@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-namespace Feather\Ignite\Models;
+namespace Feather\App\Models;
 use Illuminate\Database\Eloquent\Model;
 /**
  * Description of Models

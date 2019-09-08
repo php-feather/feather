@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-namespace Feather\Ignite\Controllers;
+namespace Feather\App\Controllers;
 
 /**
  * Description of WelcomeController

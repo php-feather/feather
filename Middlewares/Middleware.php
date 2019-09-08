@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-namespace Feather\Ignite\Middlewares;
+namespace Feather\App\Middlewares;
 /**
  * Description of Middleware
  *

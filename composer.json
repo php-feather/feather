@@ -1,6 +1,6 @@
 {
-    "name": "php-feather/ignite",
-    "description": "Feather Ignite - Lightweight PHP Framework",
+    "name": "php-feather/feather",
+    "description": "Feather - Lightweight PHP Framework",
     "license": "MIT",
 
     "authors": [
@@ -10,7 +10,9 @@
         }
     ],
     "require": {
+        "php": ">=7.0",
         "php-feather/init": "dev-master",
+        "php-feather/ignite": "dev-master",
         "php-feather/cache": "dev-master",
         "php-feather/session": "dev-master",
         "illuminate/database": "^5.8",
@@ -18,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Feather\\Ignite\\": ""
+            "Feather\\App\\": ""
         }
     }
 }

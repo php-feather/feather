@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1eaf0bbdebf947165c75e8e9e87a6a65",
+    "content-hash": "9c230d84a7b6de702a06898a46ee108f",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -75,7 +75,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.8.34",
+            "version": "v5.8.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -120,7 +120,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.8.34",
+            "version": "v5.8.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -164,16 +164,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v5.8.34",
+            "version": "v5.8.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "3ec7b1fe3877792711a77358d1ef0ae000f07b77"
+                "reference": "56635c5e683a2e3c6c01a8a3bcad3683223d3cec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/3ec7b1fe3877792711a77358d1ef0ae000f07b77",
-                "reference": "3ec7b1fe3877792711a77358d1ef0ae000f07b77",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/56635c5e683a2e3c6c01a8a3bcad3683223d3cec",
+                "reference": "56635c5e683a2e3c6c01a8a3bcad3683223d3cec",
                 "shasum": ""
             },
             "require": {
@@ -220,20 +220,20 @@
                 "orm",
                 "sql"
             ],
-            "time": "2019-08-25T08:12:42+00:00"
+            "time": "2019-08-31T17:01:57+00:00"
         },
         {
             "name": "illuminate/support",
-            "version": "v5.8.34",
+            "version": "v5.8.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "7aabcab4634a1c7865fa6acb6b1b810cf4b699ea"
+                "reference": "e63a495d3bf01654f70def1046fb925c4bb56506"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/7aabcab4634a1c7865fa6acb6b1b810cf4b699ea",
-                "reference": "7aabcab4634a1c7865fa6acb6b1b810cf4b699ea",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/e63a495d3bf01654f70def1046fb925c4bb56506",
+                "reference": "e63a495d3bf01654f70def1046fb925c4bb56506",
                 "shasum": ""
             },
             "require": {
@@ -281,7 +281,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2019-08-11T12:48:29+00:00"
+            "time": "2019-09-03T16:36:47+00:00"
         },
         {
             "name": "minime/annotations",
@@ -336,16 +336,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.23.1",
+            "version": "2.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "767617a047e5b8b8b3b0b6023a2650847ed7df02"
+                "reference": "934459c5ac0658bc765ad1e53512c7c77adcac29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/767617a047e5b8b8b3b0b6023a2650847ed7df02",
-                "reference": "767617a047e5b8b8b3b0b6023a2650847ed7df02",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/934459c5ac0658bc765ad1e53512c7c77adcac29",
+                "reference": "934459c5ac0658bc765ad1e53512c7c77adcac29",
                 "shasum": ""
             },
             "require": {
@@ -399,7 +399,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-08-17T13:57:34+00:00"
+            "time": "2019-08-31T16:37:55+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -458,15 +458,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/cache.git",
-                "reference": "836fef1b026ff621defd7da33a5639c55bdc9033"
+                "reference": "3685acc5e4ae9e2a9a125f4ab6434e691474cbb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/cache/zipball/836fef1b026ff621defd7da33a5639c55bdc9033",
-                "reference": "836fef1b026ff621defd7da33a5639c55bdc9033",
+                "url": "https://api.github.com/repos/php-feather/cache/zipball/3685acc5e4ae9e2a9a125f4ab6434e691474cbb5",
+                "reference": "3685acc5e4ae9e2a9a125f4ab6434e691474cbb5",
                 "shasum": ""
             },
             "require": {
+                "php": ">=7.0",
                 "predis/predis": "^1.1"
             },
             "type": "library",
@@ -486,7 +487,46 @@
                 }
             ],
             "description": "Feather Cache",
-            "time": "2019-08-26T17:37:34+00:00"
+            "time": "2019-09-08T13:59:49+00:00"
+        },
+        {
+            "name": "php-feather/ignite",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-feather/ignite.git",
+                "reference": "b3dbdff559afb42ed044a7f6e594054c1be79b1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-feather/ignite/zipball/b3dbdff559afb42ed044a7f6e594054c1be79b1d",
+                "reference": "b3dbdff559afb42ed044a7f6e594054c1be79b1d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "php-feather/cache": "dev-master",
+                "php-feather/init": "dev-master",
+                "php-feather/session": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Feather\\Ignite\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Francis Carbah",
+                    "email": "afrounit@hotmail.com"
+                }
+            ],
+            "description": "Feather Ignite - PHP Feather Framework Engine",
+            "time": "2019-09-08T14:21:41+00:00"
         },
         {
             "name": "php-feather/init",
@@ -494,16 +534,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/init.git",
-                "reference": "e8e3368ecbeb8a334ede98872bddfbfecfe01c56"
+                "reference": "4f3ea76c5db9394a8de0ef8d72902d0c373d8435"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/init/zipball/e8e3368ecbeb8a334ede98872bddfbfecfe01c56",
-                "reference": "e8e3368ecbeb8a334ede98872bddfbfecfe01c56",
+                "url": "https://api.github.com/repos/php-feather/init/zipball/4f3ea76c5db9394a8de0ef8d72902d0c373d8435",
+                "reference": "4f3ea76c5db9394a8de0ef8d72902d0c373d8435",
                 "shasum": ""
             },
             "require": {
                 "minime/annotations": "^3.1",
+                "php": ">=7.0",
                 "php-feather/session": "dev-master"
             },
             "type": "library",
@@ -523,7 +564,7 @@
                 }
             ],
             "description": "Feather Init - Lightweight PHP Routing Engine",
-            "time": "2019-08-29T04:00:07+00:00"
+            "time": "2019-09-08T13:58:34+00:00"
         },
         {
             "name": "php-feather/session",
@@ -531,15 +572,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/session.git",
-                "reference": "3877d4dfcc307cc6cd911630ea8a7de8ea2365f7"
+                "reference": "d58b6c51fad48bf19a571bfec96e3cb42debf61b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/session/zipball/3877d4dfcc307cc6cd911630ea8a7de8ea2365f7",
-                "reference": "3877d4dfcc307cc6cd911630ea8a7de8ea2365f7",
+                "url": "https://api.github.com/repos/php-feather/session/zipball/d58b6c51fad48bf19a571bfec96e3cb42debf61b",
+                "reference": "d58b6c51fad48bf19a571bfec96e3cb42debf61b",
                 "shasum": ""
             },
             "require": {
+                "php": ">=7.0",
                 "predis/predis": "^1.1"
             },
             "type": "library",
@@ -559,7 +601,7 @@
                 }
             ],
             "description": "Feather Session",
-            "time": "2019-08-25T20:42:18+00:00"
+            "time": "2019-09-08T14:00:18+00:00"
         },
         {
             "name": "predis/predis",
@@ -951,11 +993,14 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "php-feather/init": 20,
+        "php-feather/ignite": 20,
         "php-feather/cache": 20,
         "php-feather/session": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.0"
+    },
     "platform-dev": []
 }
