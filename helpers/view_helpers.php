@@ -28,7 +28,7 @@ function url_prev(){
 }
 
 function set_variables($keys){
-    $path = ABS_PATH. '/variables.php';
+    $path = BASE_PATH. '/variables.php';
     $file = fopen($path, 'w');
     
     if($file){
