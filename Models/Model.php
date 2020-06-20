@@ -1,18 +1,12 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 namespace Feather\App\Models;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model as RootModel;
 /**
  * Description of Models
  *
  * @author fcarbah
  */
-abstract class Model extends Model {
+abstract class Model extends RootModel {
     //put your code here
 }
