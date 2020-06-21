@@ -6,7 +6,7 @@ require '../config/constants.php';
 
 use Feather\Ignite\App;
 
-App::setBasePaths(BASE_PATH,BASE_PATH.'/config',BASE_PATH.'/storage/logs',VIEWS_PATH);
+App::setBasePaths(BASE_PATH,BASE_PATH.'/config',BASE_PATH.'/storage/logs',VIEWS_PATH,BASE_PATH.'/storage/app/');
 
 App::startSession();
 
