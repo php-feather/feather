@@ -512,12 +512,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/ignite.git",
-                "reference": "e227998657031b80a1f7f8f8d233d8f81a1f7dc0"
+                "reference": "ac326f5ee7e207654ed7c87097764e76a6b5b01a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/ignite/zipball/e227998657031b80a1f7f8f8d233d8f81a1f7dc0",
-                "reference": "e227998657031b80a1f7f8f8d233d8f81a1f7dc0",
+                "url": "https://api.github.com/repos/php-feather/ignite/zipball/ac326f5ee7e207654ed7c87097764e76a6b5b01a",
+                "reference": "ac326f5ee7e207654ed7c87097764e76a6b5b01a",
                 "shasum": ""
             },
             "require": {
@@ -543,7 +543,7 @@
                 }
             ],
             "description": "Feather Ignite - PHP Feather Framework Engine",
-            "time": "2020-06-21T00:24:46+00:00"
+            "time": "2020-06-21T19:48:47+00:00"
         },
         {
             "name": "php-feather/init",
