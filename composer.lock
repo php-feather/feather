@@ -518,12 +518,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/ignite.git",
-                "reference": "c75681ef0ae7ffff2389009e57467e6c6f782a5d"
+                "reference": "46efa08a56859a744a1441228499e36edb6da384"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/ignite/zipball/c75681ef0ae7ffff2389009e57467e6c6f782a5d",
-                "reference": "c75681ef0ae7ffff2389009e57467e6c6f782a5d",
+                "url": "https://api.github.com/repos/php-feather/ignite/zipball/46efa08a56859a744a1441228499e36edb6da384",
+                "reference": "46efa08a56859a744a1441228499e36edb6da384",
                 "shasum": ""
             },
             "require": {
@@ -537,7 +537,10 @@
             "autoload": {
                 "psr-4": {
                     "Feather\\Ignite\\": "src/"
-                }
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -550,7 +553,7 @@
                 }
             ],
             "description": "Feather Ignite - PHP Feather Framework Engine",
-            "time": "2020-07-03T03:27:22+00:00"
+            "time": "2020-07-03T20:40:33+00:00"
         },
         {
             "name": "php-feather/init",
@@ -558,24 +561,28 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/init.git",
-                "reference": "29ffc9c7011cb730635332e171cb83bcaee7c6df"
+                "reference": "5d6274b9910b4e85b822e5f79fa100bb32d55b7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/init/zipball/29ffc9c7011cb730635332e171cb83bcaee7c6df",
-                "reference": "29ffc9c7011cb730635332e171cb83bcaee7c6df",
+                "url": "https://api.github.com/repos/php-feather/init/zipball/5d6274b9910b4e85b822e5f79fa100bb32d55b7c",
+                "reference": "5d6274b9910b4e85b822e5f79fa100bb32d55b7c",
                 "shasum": ""
             },
             "require": {
                 "minime/annotations": "^3.1",
                 "php": ">=7.0",
+                "php-feather/cache": "dev-master",
                 "php-feather/session": "dev-master"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Feather\\Init\\": "src/"
-                }
+                },
+                "files": [
+                    "src/bootstrap/autoloader.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -588,7 +595,7 @@
                 }
             ],
             "description": "Feather Init - Lightweight PHP Routing Engine",
-            "time": "2020-07-03T02:59:14+00:00"
+            "time": "2020-07-03T21:15:22+00:00"
         },
         {
             "name": "php-feather/session",
