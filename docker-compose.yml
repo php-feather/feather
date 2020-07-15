@@ -1,0 +1,15 @@
+## YAML Template.
+---
+version: '3'
+services:
+  feather:
+    build: .
+    container_name: feather
+    ports:
+      - 80:80
+    volumes:
+        - ./:/var/www/html
+        - ./docker/site.conf:/etc/apache2/conf-enabled/docker-php.conf
+        - ./docker/php.ini:/usr/local/etc/php/conf.d/custom.ini
+    restart: always
+

@@ -23,7 +23,7 @@
                     
                     <img src="<?=asset('img/feather2.png')?>" alt="feather" title="feather" style="width:64px;"/>
                     
-                    <p class="display-1">Feather Ignite</p>
+                    <p class="display-1">Feather</p>
                     <p class="display-4">A lightweight, super fast PHP Framework</p>
                     <p class="text-muted"><small>Development Framework</small></p>
                     

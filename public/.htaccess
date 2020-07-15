@@ -48,14 +48,17 @@ Header set Cache-Control "max-age=86400, public"
 
 RewriteEngine on
 
+ # Handle Authorization Header
 RewriteCond %{HTTP:Authorization} .
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
-#RewriteCond %{REQUEST_URI} !(assets\/.*)
-#RewriteCond %{REQUEST_URI} !(\.(ico|jpe?g|png|bmp))$
+# Redirect Trailing Slashes If Not A Folder...
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [L,R=301]
+
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 
-#RewriteCond %{REQUEST_URI} \.php
-
-RewriteRule . index.php [L]
+RewriteRule ^ index.php [L]
