@@ -24,7 +24,7 @@
                     
                     <h1 class="display-1">Feather {<img src="<?=asset('img/feather2.png')?>" alt="feather" title="feather" style="width:64px;"/>}</h1>
                     <h4 class="display-4">A lightweight, super fast PHP Framework</h4>
-                    <h6 class="text-muted mb-1 font-12"><small>Development Framework by PHP-FEATHER</small></h6>
+                    <h6 class="text-muted mb-1 font-12"><small>Development Framework by <em>PHP-FEATHER</em></small></h6>
                     
                     <div class="card mb-1">
                         
@@ -70,7 +70,7 @@
                 </div>
                 
                 <div class="fixed-bottom col text-muted my-2">
-                    <small>&COPY; <?=date('Y')?> PHP-FEATHER<sup>&trade;</sup></small>
+                    <small>&COPY; 2019 - <?=date('Y')?> PHP-FEATHER<sup>&trade;</sup></small>
                 </div>
             </div>
             
