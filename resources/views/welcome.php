@@ -9,7 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
-            .code pre{margin-bottom:0.9em;font-size:0.8em;}
+            .code pre{margin-bottom:0.65em;font-size:0.8em;}
+            .font-12{font-size:12px;}
         </style>
     </head>
     
@@ -21,13 +22,11 @@
             <div class="row h-100">
                 <div class="col-md-8 my-auto mx-auto text-center">
                     
-                    <img src="<?=asset('img/feather2.png')?>" alt="feather" title="feather" style="width:64px;"/>
+                    <h1 class="display-1">Feather {<img src="<?=asset('img/feather2.png')?>" alt="feather" title="feather" style="width:64px;"/>}</h1>
+                    <h4 class="display-4">A lightweight, super fast PHP Framework</h4>
+                    <h6 class="text-muted mb-1 font-12"><small>Development Framework by PHP-FEATHER</small></h6>
                     
-                    <p class="display-1">Feather</p>
-                    <p class="display-4">A lightweight, super fast PHP Framework</p>
-                    <p class="text-muted"><small>Development Framework</small></p>
-                    
-                    <div class="card mb-3">
+                    <div class="card mb-1">
                         
                         <div class="row no-gutters align-items-center">
                             
@@ -41,7 +40,7 @@
                                     
                                     <pre class=""><code>use Feather\Ignite\App;</code></pre>
                                     <pre class=""><code>use Feather\View\Engine\NativeEngine;</code></pre>
-                                    <pre class="font-14">...<br/>...<br/>...</pre>
+                                    <pre class="font-14">...<br/>...</pre>
                                     <pre class="text-truncate"><code>App::setBasePaths($basePath,$configPath,$logPath,...);</code></pre>
 
                                     <pre class=""><code>App::startSession();</code></pre>
@@ -50,11 +49,11 @@
                                          
                                     <pre class=""><code><var>$app->boot($requireFiles);</var></code></pre>
 
-                                    <pre class="font-14">...<br/>...<br/>...</pre>
+                                    <pre class="font-14">...<br/>...</pre>
                                     
                                     <pre class="text-truncate"><code>$app->registerViewEngine('native', NativeEngine::getInstance($viewsPath, $viewsCachePath));</code></pre>
                                     
-                                    <pre><code>...<br/>...<br/>...</code></pre>
+                                    <pre><code>...<br/>...</code></pre>
                                     
                                     <pre><code>$app->run();</code></pre>
                                     
@@ -71,7 +70,7 @@
                 </div>
                 
                 <div class="fixed-bottom col text-muted my-2">
-                    <small>&COPY; <?=date('Y')?> Feather</small>
+                    <small>&COPY; <?=date('Y')?> PHP-FEATHER<sup>&trade;</sup></small>
                 </div>
             </div>
             

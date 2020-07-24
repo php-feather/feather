@@ -1,8 +1,27 @@
 <?php
+/**
+ * Errors Page configuration
+ */
+$errors_config = [
+    'view' => 'errors/errors.php',
+    'viewEngine' => 'native'
+];
 
-$errors_page = 'errors/errors.php';
+/** 
+ * Controller Congigurations
+ */
 
-$ctrl_namespace = "\\Feather\\App\\Controllers\\";
+$ctrl_config =[
+    'namespace' => "\\Feather\\App\\Controllers\\",
+    'default'=> '\Feather\App\Controllers\WelcomeController'
+];
 
-$default_controller = '\Feather\App\Controllers\WelcomeController';
+/**
+ * Router configuration
+ * Disabing autoRouting will also disable fallbackRouting
+ */
+$route_config = [
+    'autoRouting'=>true,
+    'fallbackRouting'=>true
+];
 

@@ -17,7 +17,12 @@ $app = App::getInstance();
 /**
  * 
  */
-$app->init($ctrl_namespace,$default_controller,APP_PATH.'/Controllers/');
+$app->init($ctrl_config['namespace'],$ctrl_config['default'],APP_PATH.'/Controllers/');
+
+/**
+ * Configure Router
+ */
+$app->configureRouter($route_config);
 
 /**
  * 
@@ -43,7 +48,7 @@ $app->registerViewEngine('twig', TwigEngine::getInstance(VIEWS_PATH, BASE_PATH.'
  * 3. $file - filename in which the error occurred 
  * 4. $line - line number
  */
-$app->setErrorPage('errors/errors.php','native');
+$app->setErrorPage($errors_config['view'],$errors_config['viewEngine']);
 
 /**
  * Enable route caching - this will use by default the caching method of the app if specified
