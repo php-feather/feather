@@ -25,11 +25,15 @@ $app->init($ctrl_config['namespace'],$ctrl_config['default'],APP_PATH.'/Controll
 $app->configureRouter($route_config);
 
 /**
- * 
+ * Activate caching
  */
 $app->setCaching();
 
-$app->boot([BASE_PATH.'/bootstrap/eloquent.php',BASE_PATH.'/routes/routes.php',BASE_PATH.'/helpers/view_helpers.php']);
+/**
+ * Boot up app
+ * Add files you which to boot with the app
+ */
+$app->boot([BASE_PATH.'/bootstrap/eloquent.php',BASE_PATH.'/routes/routes.php']);
 
 /**
  * Register view engines
@@ -52,9 +56,10 @@ $app->setErrorPage($errors_config['view'],$errors_config['viewEngine']);
 
 /**
  * Enable route caching - this will use by default the caching method of the app if specified
- * To use a custom caching you can register a cache handler on the roter itself
+ * To use a custom caching you can register a cache handler on the router itself
  * eg. \Feather\Init\Http\Router::getInstance()->setCacheHandler($cache)
  * Your custom cache must implement the \Feather\Cache\Contracts\Cache interface
+ * TODO: move this to router configuration
  */
 
 //$app->activateRouterCache();
