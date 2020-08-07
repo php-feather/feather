@@ -4,6 +4,7 @@ Php-Feather Dev Build. A **lightweight, fast** PHP framework
 `composer create-project --stability dev php-feather/feather projectname`
 
 Navigate to project folder and run the commnd below:
+
 `composer update`
 
 #### Running Locally
