@@ -9,5 +9,7 @@ Navigate to project folder and run the commnd below:
 #### Running Locally
 ##### Docker
 If you have docker installed and running on your pc just run the command below:
+
 `docker-compose up -d`
+
 Then go to: `http://localhost`
