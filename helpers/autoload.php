@@ -7,15 +7,12 @@ $_helpers_exclude = [];
 
 /**
  * Autoload all files in the helpers directory
- * @global array $_helpers_exclude
- * @param type $directory
+ * @paraml array $exclude List of files to not autoload
+ * @param type $directory absolute path of directory files to autoload
  * @return type
  */
-function feather_autoload_helpers($directory){
-    
-    /** @var array **/
-    global $_helpers_exclude;
-    
+function feather_autoload_helpers($directory, $exclude = []){
+
     if(!is_dir($directory)){
         require_once $directory;
         return;
@@ -32,11 +29,11 @@ function feather_autoload_helpers($directory){
         
         if(is_dir($file)){
             feather_autoload_helpers($file);
-        }else if(!in_array($file, $_helpers_exclude)){
+        }else if(!in_array($file, $exclude)){
             require_once $dirPath.$file;
         }
     }
     
 }
 
-feather_autoload_helpers(dirname(__FILE__));
+feather_autoload_helpers(dirname(__FILE__), $_helpers_exclude);
