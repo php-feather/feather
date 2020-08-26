@@ -7,8 +7,15 @@ $config = include '../config/database.php';
 $capsule = new Capsule;
 
 
+foreach($config['connections'] as $name=>$conn){
+    
+    if(strcasecmp($name,$config['default']) == 0){
+        $capsule->addConnection($conn);
+    }
+    
+    $capsule->addConnection($conn,$name);
 
-$capsule->addConnection($config['mysql']);
+}
 
 //Make this Capsule instance available globally.
 $capsule->setAsGlobal();

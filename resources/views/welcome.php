@@ -8,6 +8,8 @@
         <meta name="author" content="F Carbah, PHP-Feather">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="shortcut icon" href="<?=asset('img/favicon.ico')?>" type="image/x-icon">
+        <link rel="icon" href="<?=asset('img/favicon.ico')?>" type="image/x-icon">
         <style>
             .code pre{margin-bottom:0.65em;font-size:0.8em;}
             .font-12{font-size:12px;}
@@ -40,20 +42,22 @@
                                     
                                     <pre class=""><code>use Feather\Ignite\App;</code></pre>
                                     <pre class=""><code>use Feather\View\Engine\NativeEngine;</code></pre>
-                                    <pre class="font-14">...<br/>...</pre>
+                                    <pre class="font-14">....</pre>
                                     <pre class="text-truncate"><code>App::setBasePaths($basePath,$configPath,$logPath,...);</code></pre>
 
-                                    <pre class=""><code>App::startSession();</code></pre>
-
                                     <pre class=""><code>$app = App::getInstance();</code></pre>
-                                         
+                                    
                                     <pre class=""><code><var>$app->boot($requireFiles);</var></code></pre>
 
+                                    <pre class=""><code>$app->startSession();</code></pre>
+
+                                    <pre class=""><code>$app->configureRouter($router_config);</code></pre>
+                                    
                                     <pre class="font-14">...<br/>...</pre>
                                     
                                     <pre class="text-truncate"><code>$app->registerViewEngine('native', NativeEngine::getInstance($viewsPath, $viewsCachePath));</code></pre>
                                     
-                                    <pre><code>...<br/>...</code></pre>
+                                    <pre><code>...</code></pre>
                                     
                                     <pre><code>$app->run();</code></pre>
                                     

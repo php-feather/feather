@@ -1,28 +1,34 @@
 <?php
 
 require '../vendor/autoload.php';
-require '../config/config.php';
-require '../config/constants.php';
+require '../config/system/config.php';
+require '../config/system/constants.php';
 
 use Feather\Ignite\App;
 use Feather\View\Engine\NativeEngine;
 use Feather\View\Engine\TwigEngine;
 
+/**
+ * Application base paths
+ * app base path, config path, logs path and app storage path
+ */
 App::setBasePaths(BASE_PATH,BASE_PATH.'/config',BASE_PATH.'/storage/logs',VIEWS_PATH,BASE_PATH.'/storage/app/');
 
-App::startSession();
-
+/**
+ * Get instance
+ */
 $app = App::getInstance();
 
 /**
- * 
+ * Boot up app
+ * Add files you which to boot with the app
  */
-$app->init($ctrl_config['namespace'],$ctrl_config['default'],APP_PATH.'/Controllers/');
+$app->boot([BASE_PATH.'/bootstrap/eloquent.php',BASE_PATH.'/routes/routes.php']);
 
 /**
- * Configure Router
+ * Start Session
  */
-$app->configureRouter($route_config);
+$app->startSession();
 
 /**
  * Activate caching
@@ -30,10 +36,9 @@ $app->configureRouter($route_config);
 $app->setCaching();
 
 /**
- * Boot up app
- * Add files you which to boot with the app
+ * Configure Router
  */
-$app->boot([BASE_PATH.'/bootstrap/eloquent.php',BASE_PATH.'/routes/routes.php']);
+$app->configureRouter($route_config);
 
 /**
  * Register view engines
@@ -53,16 +58,6 @@ $app->registerViewEngine('twig', TwigEngine::getInstance(VIEWS_PATH, BASE_PATH.'
  * 4. $line - line number
  */
 $app->setErrorPage($errors_config['view'],$errors_config['viewEngine']);
-
-/**
- * Enable route caching - this will use by default the caching method of the app if specified
- * To use a custom caching you can register a cache handler on the router itself
- * eg. \Feather\Init\Http\Router::getInstance()->setCacheHandler($cache)
- * Your custom cache must implement the \Feather\Cache\Contracts\Cache interface
- * TODO: move this to router configuration
- */
-
-//$app->activateRouterCache();
 
 /**
  * Run application
