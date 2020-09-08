@@ -23,7 +23,7 @@ $route_config = [
     'controller'=>[
         'namespace' => "\\Feather\\App\\Controllers\\",
         'default'=> '\Feather\App\Controllers\WelcomeController',
-        'baseDirectory' => dirname(__FILE__,2).'/app/Controllers/',
+        'baseDirectory' => dirname(__FILE__,3).'/app/Controllers/',
     ]
 ];
 
