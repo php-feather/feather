@@ -23,7 +23,7 @@ $app = App::getInstance();
  * Boot up app
  * Add files you which to boot with the app
  */
-$app->boot([BASE_PATH.'/bootstrap/eloquent.php',BASE_PATH.'/routes/routes.php']);
+$app->boot([BASE_PATH.'/bootstrap/eloquent.php']);
 
 /**
  * Start Session
@@ -39,6 +39,12 @@ $app->setCaching();
  * Configure Router
  */
 $app->configureRouter($route_config);
+
+/**
+ * Load registered routes
+ *  */
+$app->load(BASE_PATH.'/routes/routes.php');
+
 
 /**
  * Register view engines

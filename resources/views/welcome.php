@@ -53,7 +53,9 @@
 
                                     <pre class=""><code>$app->configureRouter($router_config);</code></pre>
                                     
-                                    <pre class="font-14">...<br/>...</pre>
+                                    <pre class=""><code>$app->load(BASE_PATH.'/routes/routes.php');</code></pre>
+                                    
+                                    <pre class="font-14">...</pre>
                                     
                                     <pre class="text-truncate"><code>$app->registerViewEngine('native', NativeEngine::getInstance($viewsPath, $viewsCachePath));</code></pre>
                                     
