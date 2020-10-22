@@ -1,5 +1,5 @@
 <?php 
-define("BASE_PATH", dirname($_SERVER['DOCUMENT_ROOT'].'../'));
+define("BASE_PATH", dirname($_SERVER['DOCUMENT_ROOT'],1));
 define('APP_PATH',BASE_PATH.'/app/');
 define("STORAGE_PATH",BASE_PATH.'/storage/');
 define("VIEWS_PATH", BASE_PATH.'/resources/views/');
