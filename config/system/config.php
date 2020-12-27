@@ -28,6 +28,11 @@ $route_config = [
     ]
 ];
 
+/**
+ * List of available validation rules
+ * You can add your custom rules to the array
+ * Custom Rules must extend \Feather\Security\Validation\Rules\Rule
+ */
 $validation_rules = [
     'afterdate' => Feather\Security\Validation\Rules\AfterDate::class,
     'alpha' => \Feather\Security\Validation\Rules\Alpha::class,

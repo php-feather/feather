@@ -2,7 +2,7 @@
 
 namespace Feather\App\Http\Controllers;
 
-use Feather\App\Http\Requests\TestRequest;
+use Feather\App\Http\Requests\Request;
 
 /**
  * Description of WelcomeController
@@ -12,7 +12,7 @@ use Feather\App\Http\Requests\TestRequest;
 class WelcomeController extends BaseController
 {
 
-    public function index(\Feather\Init\Security\FormRequest $req)
+    public function index(Request $req)
     {
         return $this->renderView('welcome.php');
     }

@@ -14,7 +14,7 @@ class TestRequest extends Request
         'name' => 'requiredif:{required:[age]}'
     ];
     protected $messages = [
-        'name.required' => 'Name is Required'
+        'name.requiredif' => 'Name is Required'
     ];
 
 }
