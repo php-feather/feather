@@ -571,12 +571,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/init.git",
-                "reference": "b190fb14d47683bf33ad793d641538852e2323ea"
+                "reference": "df2d6e1dce0f5efec23be55c78b04f45f8197dce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/init/zipball/b190fb14d47683bf33ad793d641538852e2323ea",
-                "reference": "b190fb14d47683bf33ad793d641538852e2323ea",
+                "url": "https://api.github.com/repos/php-feather/init/zipball/df2d6e1dce0f5efec23be55c78b04f45f8197dce",
+                "reference": "df2d6e1dce0f5efec23be55c78b04f45f8197dce",
                 "shasum": ""
             },
             "require": {
@@ -606,7 +606,7 @@
                 }
             ],
             "description": "Feather Init - Lightweight PHP Routing Engine",
-            "time": "2020-12-27T03:55:53+00:00"
+            "time": "2020-12-27T16:11:07+00:00"
         },
         {
             "name": "php-feather/security",

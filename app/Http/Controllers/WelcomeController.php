@@ -12,7 +12,7 @@ use Feather\App\Http\Requests\Request;
 class WelcomeController extends BaseController
 {
 
-    public function index(Request $req)
+    public function index(\Feather\App\Http\Requests\TestRequest $req)
     {
         return $this->renderView('welcome.php');
     }
