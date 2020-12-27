@@ -11,11 +11,7 @@
     ],
     "require": {
         "php": ">=7.0",
-        "php-feather/init": "dev-master",
         "php-feather/ignite": "dev-master",
-        "php-feather/cache": "dev-master",
-        "php-feather/session": "dev-master",
-        "php-feather/view": "dev-master",
         "illuminate/database": "^5.8",
         "nesbot/carbon": "^2.22"
     },
@@ -24,5 +20,7 @@
             "Feather\\App\\": "app/"
         },
         "files": ["helpers/autoload.php"]
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

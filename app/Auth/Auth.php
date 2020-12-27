@@ -22,11 +22,11 @@ class Auth {
     
     public static function getInstance(){
         
-        if(self::$self == null){
-            self::$self = new Auth();
+        if(static::$self == null){
+            static::$self = new Auth();
         }
         
-        return self::$self;
+        return static::$self;
     }
     
     public static function login(array $credentials){

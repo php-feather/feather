@@ -12,7 +12,7 @@ use Feather\View\Engine\TwigEngine;
  * Application base paths
  * app base path, config path, logs path and app storage path
  */
-App::setBasePaths(BASE_PATH,BASE_PATH.'/config',BASE_PATH.'/storage/logs',VIEWS_PATH,BASE_PATH.'/storage/app/');
+App::setBasePaths(BASE_PATH, BASE_PATH . '/config', BASE_PATH . '/storage/logs', VIEWS_PATH, BASE_PATH . '/storage/app/');
 
 /**
  * Get instance
@@ -23,7 +23,7 @@ $app = App::getInstance();
  * Boot up app
  * Add files you which to boot with the app
  */
-$app->boot([BASE_PATH.'/bootstrap/eloquent.php']);
+$app->boot([BASE_PATH . '/bootstrap/eloquent.php']);
 
 /**
  * Start Session
@@ -43,7 +43,7 @@ $app->configureRouter($route_config);
 /**
  * Load registered routes
  *  */
-$app->load(BASE_PATH.'/routes/routes.php');
+$app->load(BASE_PATH . '/routes/routes.php');
 
 
 /**
@@ -51,19 +51,26 @@ $app->load(BASE_PATH.'/routes/routes.php');
  * You can register more if you want
  * Your custom View Engines must implement \Feather\View\ViewInterface
  */
-$app->registerViewEngine('native', NativeEngine::getInstance(VIEWS_PATH, BASE_PATH.'/storage/app/'));
+$app->registerViewEngine('native', NativeEngine::getInstance(VIEWS_PATH, BASE_PATH . '/storage/app/'));
 
-$app->registerViewEngine('twig', TwigEngine::getInstance(VIEWS_PATH, BASE_PATH.'/storage/app/'));
+$app->registerViewEngine('twig', TwigEngine::getInstance(VIEWS_PATH, BASE_PATH . '/storage/app/'));
 
 /**
  * Set Page to display error messages and specify the register view engine to use for rendering error page
  * Errors page gets the following data:
  * 1. $message - error message
  * 2. $code - error code
- * 3. $file - filename in which the error occurred 
+ * 3. $file - filename in which the error occurred
  * 4. $line - line number
  */
-$app->setErrorPage($errors_config['view'],$errors_config['viewEngine']);
+$app->setErrorPage($errors_config['view'], $errors_config['viewEngine']);
+
+/**
+ * Boot validator
+ */
+$validator = Feather\Security\Validation\Validator::getInstance();
+$validator->boot($validation_rules);
+$app->register('validator', $validator);
 
 /**
  * Run application

@@ -1,6 +1,7 @@
 <?php
 
-namespace Feather\App\Controllers;
+namespace Feather\App\Http\Controllers;
+
 use Feather\Init\Controller\Controller;
 
 /**
@@ -8,15 +9,17 @@ use Feather\Init\Controller\Controller;
  *
  * @author fcarbah
  */
-class BaseController extends Controller {
-    
+class BaseController extends Controller
+{
+
     protected $viewPath = VIEWS_PATH;
     protected $cache;
-    public $validateAnnotations=false;
-    
-    public function __construct() {
+    public $validateAnnotations = false;
+
+    public function __construct()
+    {
         parent::__construct();
         $this->cache = (\Feather\Ignite\App::getInstance())->cache();
     }
-    
+
 }
