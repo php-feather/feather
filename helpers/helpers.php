@@ -4,7 +4,7 @@
  * Generates csrf Token
  * @return string
  */
-function fa_csrf_token($withCsrfHeader = true)
+function fa_csrf_token()
 {
     $csrf = \Feather\App\Security\Csrf::getInstance();
     $token = $csrf->generateToken();
@@ -18,7 +18,7 @@ function fa_csrf_token($withCsrfHeader = true)
 function fa_csrf_token_input()
 {
     $id = CSRF_ID;
-    $token = fa_csrf_token($withCsrfHeader);
+    $token = fa_csrf_token();
     return <<<TOKEN
     <input type="hidden" name="$id" value="$token" />
 TOKEN;
