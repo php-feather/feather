@@ -22,5 +22,10 @@
         "files": ["helpers/autoload.php"]
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "scripts": {
+        "post-create-project-cmd": [
+            "php bin/envsetup.php"
+        ]
+    }
 }
