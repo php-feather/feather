@@ -1,5 +1,7 @@
 <?php
 
+define('CSRF_ID', get_env('APP_CSRF_ID', '__token'));
+define('CSRF_HEADER', get_env('APP_CSRF_HEADER', 'X-XSRF'));
 /**
  * Errors Page configuration
  */

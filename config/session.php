@@ -3,6 +3,13 @@
 return [
     'lifetime' => 1200,
     'driver' => 'file',
+    /**
+     * config additional session parameters by adding them to the 'options' array
+     * configure as:
+     * eg. confirgue session.gc_max_lifetime by adding 'gc_max_lifetime' => 1440
+     * to options array below
+     */
+    'options' => [],
     'drivers' => [
         'database' => [
             'active' => 'mysql',

@@ -3,3 +3,4 @@ nbproject/
 vendor/
 public/views/temp_view.php
 public/views/temp_wrapper_view.php
+.env

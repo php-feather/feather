@@ -1,12 +1,16 @@
 <?php
 
-require '../vendor/autoload.php';
-require '../config/system/config.php';
-require '../config/system/constants.php';
-
 use Feather\Ignite\App;
 use Feather\View\Engine\NativeEngine;
 use Feather\View\Engine\TwigEngine;
+
+require '../vendor/autoload.php';
+require '../config/system/constants.php';
+
+//load env
+App::loadEnv(BASE_PATH, null, ['APP_KEY']);
+
+require CONFIG_PATH . 'system/config.php';
 
 /**
  * Application base paths
@@ -29,6 +33,11 @@ $app->boot([BASE_PATH . '/bootstrap/eloquent.php']);
  * Start Session
  */
 $app->startSession();
+
+/**
+ * Initialize application
+ */
+$app->initialize();
 
 /**
  * Activate caching
