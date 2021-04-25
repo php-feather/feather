@@ -7,7 +7,7 @@
         <meta name="keywords" content="Feather, Feather App, Feather Ignite, PHP, PHP framework, Open Source,Php Feather, PHP Development Framework">
         <meta name="author" content="F Carbah, PHP-Feather">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/bootstrap.min.css">
         <link rel="shortcut icon" href="<?= asset('img/favicon.ico') ?>" type="image/x-icon">
         <link rel="icon" href="<?= asset('img/favicon.ico') ?>" type="image/x-icon">
         <style>
@@ -38,12 +38,12 @@
 
                             <div class="col-md-7">
 
-                                <div class="card-body text-left code">
+                                <div class="card-body text-start code">
 
                                     <pre class=""><code>use Feather\Ignite\App;</code></pre>
                                     <pre class=""><code>use Feather\View\Engine\NativeEngine;</code></pre>
                                     <pre class="font-14">....</pre>
-                                    <pre class="text-truncate"><code>App::setBasePaths($basePath,$configPath,$logPath,...);</code></pre>
+                                    <pre class="text-truncate"><code>App::setBasePaths($basePath, $configPath, $logPath,...);</code></pre>
 
                                     <pre class=""><code>$app = App::getInstance();</code></pre>
 
@@ -53,13 +53,11 @@
 
                                     <pre class=""><code>$app->initialize();</code></pre>
 
-                                    <pre class=""><code>$app->configureRouter($router_config);</code></pre>
-
-                                    <pre class=""><code>$app->load(BASE_PATH.'/routes/routes.php');</code></pre>
+                                    <pre class=""><code>$app->initRouter($routerConfig);</code></pre>
 
                                     <pre class="font-14">...</pre>
 
-                                    <pre class="text-truncate"><code>$app->registerViewEngine('native', NativeEngine::getInstance($viewsPath, $viewsCachePath));</code></pre>
+                                    <pre class="text-truncate"><code>$app->registerViewEngine('native', Native::getInstance($viewsPath, $viewsCachePath));</code></pre>
 
                                     <pre><code>...</code></pre>
 

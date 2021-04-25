@@ -20,14 +20,16 @@ $route_config = [
     'fallbackRouting' => true,
     'cache' => [
         'enabled' => false,
-        //specify driver name - this is nmae
+        //specify driver name - this is the key name
+        //in drivers array in config/cache.php
         'driver' => null
     ],
     'controller' => [
         'namespace' => "\\Feather\\App\\Http\\Controllers\\",
         'default' => \Feather\App\Http\Controllers\WelcomeController::class,
         'baseDirectory' => dirname(__FILE__, 3) . '/app/Http/Controllers/',
-    ]
+    ],
+    'registeredRoutes' => dirname(__FILE__, 3) . '/routes/routes.php',
 ];
 
 /**

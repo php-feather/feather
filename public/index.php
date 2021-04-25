@@ -1,8 +1,8 @@
 <?php
 
 use Feather\Ignite\App;
-use Feather\View\Engine\NativeEngine;
-use Feather\View\Engine\TwigEngine;
+use Feather\View\Engine\Native;
+use Feather\View\Engine\Twig;
 
 require '../vendor/autoload.php';
 require '../config/system/constants.php';
@@ -45,24 +45,19 @@ $app->initialize();
 $app->setCaching();
 
 /**
- * Configure Router
+ * Configure Routing
  */
-$app->configureRouter($route_config);
-
-/**
- * Load registered routes
- *  */
-$app->load(BASE_PATH . '/routes/routes.php');
+$app->initRouter($route_config);
 
 
 /**
  * Register view engines
  * You can register more if you want
- * Your custom View Engines must implement \Feather\View\ViewInterface
+ * Your custom View Engines must implement \Feather\View\IView
  */
-$app->registerViewEngine('native', NativeEngine::getInstance(VIEWS_PATH, BASE_PATH . '/storage/app/'));
+$app->registerViewEngine('native', Native::getInstance(VIEWS_PATH, BASE_PATH . '/storage/app/'));
 
-$app->registerViewEngine('twig', TwigEngine::getInstance(VIEWS_PATH, BASE_PATH . '/storage/app/'));
+$app->registerViewEngine('twig', Twig::getInstance(VIEWS_PATH, BASE_PATH . '/storage/app/'));
 
 /**
  * Set Page to display error messages and specify the register view engine to use for rendering error page
