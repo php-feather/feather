@@ -1,5 +1,4 @@
 
-# -Multiviews necessary for folder routing
 Options +FollowSymLinks -Indexes -Multiviews
 
 #optional settings

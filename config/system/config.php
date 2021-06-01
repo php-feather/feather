@@ -32,7 +32,7 @@ $route_config = [
     ],
     'registeredRoutes' => 'routes/routes.php',
     'folderRouting' => [
-        'enabled' => false,
+        'enabled' => true,
         'path' => 'public/',
         'defaultFile' => 'index.php'
     ]
