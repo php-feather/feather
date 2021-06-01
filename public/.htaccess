@@ -1,6 +1,8 @@
 
-Options +FollowSymLinks -Indexes
+# -Multiviews necessary for folder routing
+Options +FollowSymLinks -Indexes -Multiviews
 
+#optional settings
 <filesMatch ".(jpg|jpeg|png|gif|js|ico)$">
 #cache for 1 week
 Header set Cache-Control "max-age=604800, public"
@@ -45,22 +47,23 @@ Header set Cache-Control "max-age=86400, public"
         Header append Vary User-Agent
     </IfModule>
 </IfModule>
+#optional settings end
 
+
+#required settings
 RewriteEngine on
 
 #Handle Authorization Header
 RewriteCond %{HTTP:Authorization} .
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
-# Redirect Trailing Slashes If Not A Folder...
+# Redirect Trailing Slashes If Not A Folder...,
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} (.+)/$
 RewriteRule ^ %1 [L,R=301]
 
 
-#uncomment next line to disable folder based routing
-#or if you are using folder outside the doc root
-#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 
 RewriteRule ^ index.php [L]

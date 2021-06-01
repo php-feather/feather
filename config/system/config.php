@@ -31,7 +31,8 @@ $route_config = [
         'baseDirectory' => 'app/Http/Controllers/',
     ],
     'registeredRoutes' => 'routes/routes.php',
-    'folderRoute' => [
+    'folderRouting' => [
+        'enabled' => false,
         'path' => 'public/',
         'defaultFile' => 'index.php'
     ]
