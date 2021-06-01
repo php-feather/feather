@@ -7,7 +7,7 @@ Header set Cache-Control "max-age=604800, public"
 </filesMatch>
 
 <filesMatch ".(css|js)$">
-#cache for i day
+#cache for 1 day
 Header set Cache-Control "max-age=86400, public"
 </filesMatch>
 
@@ -48,7 +48,7 @@ Header set Cache-Control "max-age=86400, public"
 
 RewriteEngine on
 
- # Handle Authorization Header
+#Handle Authorization Header
 RewriteCond %{HTTP:Authorization} .
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
@@ -58,7 +58,9 @@ RewriteCond %{REQUEST_URI} (.+)/$
 RewriteRule ^ %1 [L,R=301]
 
 
-RewriteCond %{REQUEST_FILENAME} !-d
+#uncomment next line to disable folder based routing
+#or if you are using folder outside the doc root
+#RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 
 RewriteRule ^ index.php [L]

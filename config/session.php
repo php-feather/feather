@@ -28,7 +28,7 @@ return [
             ]
         ],
         'file' => [
-            'path' => dirname(__FILE__, 2) . '/storage/sessions/',
+            'path' => 'storage/sessions/',
             'driver' => Feather\Session\Drivers\FileDriver::class,
         ],
         'redis' => [

@@ -6,7 +6,8 @@ define('CSRF_HEADER', get_env('APP_CSRF_HEADER', 'X-XSRF'));
  * Errors Page configuration
  */
 $errors_config = [
-    'view' => 'errors/errors.php',
+    'defaultFile' => 'errors.php',
+    'path' => 'resources/views/errors/',
     'viewEngine' => 'native'
 ];
 
@@ -27,9 +28,13 @@ $route_config = [
     'controller' => [
         'namespace' => "\\Feather\\App\\Http\\Controllers\\",
         'default' => \Feather\App\Http\Controllers\WelcomeController::class,
-        'baseDirectory' => dirname(__FILE__, 3) . '/app/Http/Controllers/',
+        'baseDirectory' => 'app/Http/Controllers/',
     ],
-    'registeredRoutes' => dirname(__FILE__, 3) . '/routes/routes.php',
+    'registeredRoutes' => 'routes/routes.php',
+    'folderRoute' => [
+        'path' => 'public/',
+        'defaultFile' => 'index.php'
+    ]
 ];
 
 /**

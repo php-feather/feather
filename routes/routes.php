@@ -1,6 +1,6 @@
 <?php
 
-$router = \Feather\Init\Http\Router\Router::getInstance();
+$router = \Feather\Init\Http\Routing\Router::getInstance();
 
 $router->get('/', '\Feather\App\Http\Controllers\WelcomeController');
 
@@ -24,3 +24,5 @@ $router->group(['prefix' => 'group'], function() use($router) {
 $router->any('/test/{west}/{:test}', function($west, $test = '') {
     echo 'You visitied test/' . $west . "/$test";
 });
+
+$router->folder('admin', 'backend');

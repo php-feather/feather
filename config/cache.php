@@ -21,7 +21,7 @@ return [
             ]
         ],
         'file' => [
-            'path' => dirname(__FILE__, 2) . '/storage/cache/',
+            'path' => 'storage/cache/',
             'driver' => Feather\Cache\FileCache::class,
         ],
         'redis' => [

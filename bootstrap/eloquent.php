@@ -7,14 +7,13 @@ $config = include '../config/database.php';
 $capsule = new Capsule;
 
 
-foreach($config['connections'] as $name=>$conn){
-    
-    if(strcasecmp($name,$config['default']) == 0){
+foreach ($config['eloquent']['connections'] as $name => $conn) {
+
+    if (strcasecmp($name, $config['eloquent']['default']) == 0) {
         $capsule->addConnection($conn);
     }
-    
-    $capsule->addConnection($conn,$name);
 
+    $capsule->addConnection($conn, $name);
 }
 
 //Make this Capsule instance available globally.
