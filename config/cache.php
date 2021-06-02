@@ -2,21 +2,25 @@
 
 return [
     'expires' => 300,
-    'driver' => 'file',
+    'driver' => 'database',
     'drivers' => [
         'database' => [
             'active' => 'mysql',
             'driver' => \Feather\Cache\DatabaseCache::class,
             'connections' => [
                 'mysql' => array(
-                    'dsn' => 'mysql:host=localhost;dbname=test',
+                    'dsn' => 'mysql:host=localhost;dbname=feather',
                     'user' => 'root',
-                    'password' => ''
+                    'password' => '',
+                    'pdoOptions' => [],
+                    'table' => 'cache'
                 ),
                 'mssql' => array(
                     'dsn' => '',
                     'user' => '',
-                    'password' => ''
+                    'password' => '',
+                    'pdoOptions' => [],
+                    'table' => 'cache'
                 )
             ]
         ],

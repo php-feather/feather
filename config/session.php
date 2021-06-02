@@ -2,7 +2,7 @@
 
 return [
     'lifetime' => 1200,
-    'driver' => 'file',
+    'driver' => 'database',
     /**
      * config additional session parameters by adding them to the 'options' array
      * configure as:
@@ -16,14 +16,18 @@ return [
             'driver' => Feather\Session\Drivers\DatabaseDriver::class,
             'connections' => [
                 'mysql' => array(
-                    'dsn' => 'mysql:host=localhost;dbname=test',
+                    'dsn' => 'mysql:host=localhost;dbname=feather',
                     'user' => 'root',
-                    'password' => ''
+                    'password' => '',
+                    'pdoOptions' => [],
+                    'table' => 'sessions'
                 ),
                 'mssql' => array(
                     'dsn' => '',
                     'user' => '',
-                    'password' => ''
+                    'password' => '',
+                    'pdoOptions' => [],
+                    'table' => 'sessions'
                 )
             ]
         ],

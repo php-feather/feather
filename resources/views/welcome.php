@@ -51,8 +51,6 @@
 
                                     <pre class=""><code>$app->startSession();</code></pre>
 
-                                    <pre class=""><code>$app->initialize();</code></pre>
-
                                     <pre class=""><code>$app->initRouter($routerConfig);</code></pre>
 
                                     <pre class="font-14">...</pre>

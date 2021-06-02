@@ -9,6 +9,9 @@ $app = App::getInstance();
 
 feather_autoload(__DIR__, ['app.php']);
 
+//register items to container
+feather_autoload(BASE_PATH . 'container');
+
 //set env
 $debug = get_env('APP_DEBUG', true);
 if (in_array($debug, ['false', '0'])) {
@@ -36,10 +39,3 @@ $app->registerErrorHandler($env->getErrorHandler());
  * 4. $line - line number
  */
 $app->setErrorPage($errors_config['path'], $errors_config['defaultFile'], $errors_config['viewEngine']);
-
-/**
- * Boot validator
- */
-$validator = Feather\Security\Validation\Validator::getInstance();
-$validator->boot($validation_rules);
-$app->register('validator', $validator);
