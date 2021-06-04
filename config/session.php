@@ -2,7 +2,7 @@
 
 return [
     'lifetime' => 1200,
-    'driver' => 'database',
+    'driver' => 'file',
     /**
      * config additional session parameters by adding them to the 'options' array
      * configure as:

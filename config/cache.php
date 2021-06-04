@@ -2,7 +2,7 @@
 
 return [
     'expires' => 300,
-    'driver' => 'database',
+    'driver' => 'file',
     'drivers' => [
         'database' => [
             'active' => 'mysql',
