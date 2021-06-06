@@ -2,8 +2,8 @@
 
 use Feather\Ignite\App;
 use Feather\Ignite\Environment;
-use Feather\View\Engine\Native;
-use Feather\View\Engine\Twig;
+use Feather\View\Native;
+use Feather\View\Twig;
 
 $app = App::getInstance();
 
@@ -25,9 +25,9 @@ $env = Environment::getInstance(get_env('APP_ENV'), (bool) $debug);
  * You can register more if you want
  * Your custom View Engines must implement \Feather\View\IView
  */
-$app->registerViewEngine('native', Native::getInstance(VIEWS_PATH, BASE_PATH . '/storage/app/'));
+$app->registerViewEngine('native', new Native(VIEWS_PATH, BASE_PATH . '/storage/app/'));
 
-$app->registerViewEngine('twig', Twig::getInstance(VIEWS_PATH, BASE_PATH . '/storage/app/'));
+$app->registerViewEngine('twig', new Twig(VIEWS_PATH));
 
 $app->registerErrorHandler($env->getErrorHandler());
 /**
