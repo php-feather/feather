@@ -521,16 +521,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.48.1",
+            "version": "2.49.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "8d1f50f1436fb4b05e7127360483dd9c6e73da16"
+                "reference": "93d9db91c0235c486875d22f1e08b50bdf3e6eee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/8d1f50f1436fb4b05e7127360483dd9c6e73da16",
-                "reference": "8d1f50f1436fb4b05e7127360483dd9c6e73da16",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/93d9db91c0235c486875d22f1e08b50bdf3e6eee",
+                "reference": "93d9db91c0235c486875d22f1e08b50bdf3e6eee",
                 "shasum": ""
             },
             "require": {
@@ -610,7 +610,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-26T22:08:38+00:00"
+            "time": "2021-06-02T07:31:40+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -770,12 +770,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/init.git",
-                "reference": "f902108c57eb5b83dc4765cdb8c29e23e09ad47a"
+                "reference": "b771f53ed32b8b16668e17dc3e6e5b79930805ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/init/zipball/f902108c57eb5b83dc4765cdb8c29e23e09ad47a",
-                "reference": "f902108c57eb5b83dc4765cdb8c29e23e09ad47a",
+                "url": "https://api.github.com/repos/php-feather/init/zipball/b771f53ed32b8b16668e17dc3e6e5b79930805ff",
+                "reference": "b771f53ed32b8b16668e17dc3e6e5b79930805ff",
                 "shasum": ""
             },
             "require": {
@@ -811,7 +811,7 @@
                 "issues": "https://github.com/php-feather/init/issues",
                 "source": "https://github.com/php-feather/init/tree/master"
             },
-            "time": "2021-06-02T20:43:39+00:00"
+            "time": "2021-06-12T14:49:50+00:00"
         },
         {
             "name": "php-feather/security",
@@ -819,17 +819,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/security.git",
-                "reference": "b4ca159d74b45c37ea7af868b77a3386bca6b284"
+                "reference": "507bf9db8345b62a99112d450deab5e321ec0b40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/security/zipball/b4ca159d74b45c37ea7af868b77a3386bca6b284",
-                "reference": "b4ca159d74b45c37ea7af868b77a3386bca6b284",
+                "url": "https://api.github.com/repos/php-feather/security/zipball/507bf9db8345b62a99112d450deab5e321ec0b40",
+                "reference": "507bf9db8345b62a99112d450deab5e321ec0b40",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0",
                 "php-feather/session": "dev-master"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5"
             },
             "default-branch": true,
             "type": "library",
@@ -856,7 +859,7 @@
                 "issues": "https://github.com/php-feather/security/issues",
                 "source": "https://github.com/php-feather/security/tree/master"
             },
-            "time": "2020-12-27T01:12:41+00:00"
+            "time": "2021-06-12T15:10:05+00:00"
         },
         {
             "name": "php-feather/session",
