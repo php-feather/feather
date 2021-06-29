@@ -25,4 +25,4 @@ $router->any('/test/{west}/{:test}', function($west, $test = '') {
     echo 'You visitied test/' . $west . "/$test";
 });
 
-$router->folder('admin', 'backend');
+$router->folder('admin/{:me}', 'backend');
