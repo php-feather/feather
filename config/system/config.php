@@ -20,10 +20,10 @@ $route_config = [
     'autoRouting' => true,
     'fallbackRouting' => true,
     'cache' => [
-        'enabled' => false,
+        'enabled' => true,
         //specify driver name - this is the key name
         //in drivers array in config/cache.php
-        'driver' => null
+        'driver' => 'file'
     ],
     'controller' => [
         'namespace' => "\\Feather\\App\\Http\\Controllers\\",
