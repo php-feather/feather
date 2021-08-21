@@ -1,8 +1,6 @@
 <?php
 
 use Feather\Ignite\App;
-use Feather\View\Engine\Native;
-use Feather\View\Engine\Twig;
 
 require '../vendor/autoload.php';
 require '../config/system/constants.php';

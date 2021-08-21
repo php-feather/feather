@@ -2,8 +2,6 @@
 
 use Feather\Ignite\App;
 use Feather\Ignite\Environment;
-use Feather\View\Native;
-use Feather\View\Twig;
 
 $app = App::getInstance();
 
@@ -12,7 +10,7 @@ feather_autoload(__DIR__, ['app.php']);
 //register items to container
 feather_autoload(BASE_PATH . 'container');
 
-//set env
+//set env and debug settings
 $debug = get_env('APP_DEBUG', true);
 if (in_array($debug, ['false', '0'])) {
     $debug = false;
@@ -20,16 +18,14 @@ if (in_array($debug, ['false', '0'])) {
     $debug = true;
 }
 $env = Environment::getInstance(get_env('APP_ENV'), (bool) $debug);
+
 /**
- * Register view engines
- * You can register more if you want
- * Your custom View Engines must implement \Feather\View\IView
+ * Register Error Handler
+ * You can register your custom Handler
+ * Your custom Error Handler must implement \Feather\Ignite\ErrorHandler\IErrorHandler
  */
-$app->registerViewEngine('native', new Native(VIEWS_PATH, BASE_PATH . '/storage/app/'));
-
-$app->registerViewEngine('twig', new Twig(VIEWS_PATH));
-
 $app->registerErrorHandler($env->getErrorHandler());
+
 /**
  * Set Page to display error messages and specify the register view engine to use for rendering error page
  * Errors page gets the following data:
