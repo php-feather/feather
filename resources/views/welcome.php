@@ -41,7 +41,7 @@
                                 <div class="card-body text-start code">
 
                                     <pre class=""><code>use Feather\Ignite\App;</code></pre>
-                                    <pre class=""><code>use Feather\View\Engine\NativeEngine;</code></pre>
+                                    <pre class=""><code>App::loadEnv($basePath, null, ['APP_KEY']);</code></pre>
                                     <pre class="font-14">....</pre>
                                     <pre class="text-truncate"><code>App::setBasePaths($basePath, $configPath, $logPath,...);</code></pre>
 
@@ -54,10 +54,6 @@
                                     <pre class=""><code>$app->initRouter($routerConfig);</code></pre>
 
                                     <pre class="font-14">...</pre>
-
-                                    <pre class="text-truncate"><code>$app->registerViewEngine('native', Native::getInstance($viewsPath, $viewsCachePath));</code></pre>
-
-                                    <pre><code>...</code></pre>
 
                                     <pre><code>$app->run();</code></pre>
 
