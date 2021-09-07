@@ -5,23 +5,10 @@ return [
     'driver' => 'file',
     'drivers' => [
         'database' => [
-            'active' => 'mysql',
             'driver' => \Feather\Cache\DatabaseCache::class,
-            'connections' => [
-                'mysql' => array(
-                    'dsn' => 'mysql:host=localhost;dbname=feather',
-                    'user' => 'root',
-                    'password' => '',
-                    'pdoOptions' => [],
-                    'table' => 'cache'
-                ),
-                'mssql' => array(
-                    'dsn' => '',
-                    'user' => '',
-                    'password' => '',
-                    'pdoOptions' => [],
-                    'table' => 'cache'
-                )
+            'connection' => 'mysql',
+            'config' => [
+                'table' => 'cache'
             ]
         ],
         'file' => [
