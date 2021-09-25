@@ -35,3 +35,23 @@ $app->registerErrorHandler($env->getErrorHandler());
  * 4. $line - line number
  */
 $app->setErrorPage($errors_config['path'], $errors_config['defaultFile'], $errors_config['viewEngine']);
+
+/**
+ * Boot application
+ */
+$app->boot();
+
+/**
+ * Start Session
+ */
+$app->startSession();
+
+/**
+ * Activate caching
+ */
+$app->setCaching();
+
+/**
+ * Configure Routing
+ */
+$app->initRouter($route_config);

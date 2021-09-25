@@ -103,16 +103,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.14.1",
+            "version": "2.14.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "15ead64e9828f0fc90932114429c4f7923570cb1"
+                "reference": "89584ce67dd32307f1063cc43846674f4679feda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/15ead64e9828f0fc90932114429c4f7923570cb1",
-                "reference": "15ead64e9828f0fc90932114429c4f7923570cb1",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/89584ce67dd32307f1063cc43846674f4679feda",
+                "reference": "89584ce67dd32307f1063cc43846674f4679feda",
                 "shasum": ""
             },
             "require": {
@@ -162,7 +162,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.14.1"
+                "source": "https://github.com/filp/whoops/tree/2.14.3"
             },
             "funding": [
                 {
@@ -170,7 +170,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-08-29T12:00:00+00:00"
+            "time": "2021-09-19T12:00:00+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -235,7 +235,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v6.20.33",
+            "version": "v6.20.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -283,7 +283,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v6.20.33",
+            "version": "v6.20.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -331,7 +331,7 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v6.20.33",
+            "version": "v6.20.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
@@ -396,7 +396,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v6.20.33",
+            "version": "v6.20.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -445,7 +445,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v6.20.33",
+            "version": "v6.20.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -502,16 +502,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v6.20.33",
+            "version": "v6.20.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "566e3dcfb0e3973ed8cd86ddb4ad4ef33a84fedf"
+                "reference": "0708be7b0b1971b24865baf9d3dbb7a4e21a1df2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/566e3dcfb0e3973ed8cd86ddb4ad4ef33a84fedf",
-                "reference": "566e3dcfb0e3973ed8cd86ddb4ad4ef33a84fedf",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/0708be7b0b1971b24865baf9d3dbb7a4e21a1df2",
+                "reference": "0708be7b0b1971b24865baf9d3dbb7a4e21a1df2",
                 "shasum": ""
             },
             "require": {
@@ -563,11 +563,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-03-12T13:52:50+00:00"
+            "time": "2021-09-06T21:42:26+00:00"
         },
         {
             "name": "illuminate/view",
-            "version": "v6.20.33",
+            "version": "v6.20.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
@@ -936,12 +936,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/ignite.git",
-                "reference": "58b674c2e4fc7cb8746b72afe98853d407c650e6"
+                "reference": "6ffc80add9aaf2ebfbc5ea6ce55f64c22a108aaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/ignite/zipball/58b674c2e4fc7cb8746b72afe98853d407c650e6",
-                "reference": "58b674c2e4fc7cb8746b72afe98853d407c650e6",
+                "url": "https://api.github.com/repos/php-feather/ignite/zipball/6ffc80add9aaf2ebfbc5ea6ce55f64c22a108aaa",
+                "reference": "6ffc80add9aaf2ebfbc5ea6ce55f64c22a108aaa",
                 "shasum": ""
             },
             "require": {
@@ -979,7 +979,7 @@
                 "issues": "https://github.com/php-feather/ignite/issues",
                 "source": "https://github.com/php-feather/ignite/tree/master"
             },
-            "time": "2021-09-07T01:47:14+00:00"
+            "time": "2021-09-25T18:58:23+00:00"
         },
         {
             "name": "php-feather/init",
@@ -987,12 +987,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/init.git",
-                "reference": "2051e2732f882fa367e1e63ef01060f9a581e620"
+                "reference": "2a857df0f59a3edddbac28c3c172f40d2028ec89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/init/zipball/2051e2732f882fa367e1e63ef01060f9a581e620",
-                "reference": "2051e2732f882fa367e1e63ef01060f9a581e620",
+                "url": "https://api.github.com/repos/php-feather/init/zipball/2a857df0f59a3edddbac28c3c172f40d2028ec89",
+                "reference": "2a857df0f59a3edddbac28c3c172f40d2028ec89",
                 "shasum": ""
             },
             "require": {
@@ -1032,7 +1032,7 @@
                 "issues": "https://github.com/php-feather/init/issues",
                 "source": "https://github.com/php-feather/init/tree/master"
             },
-            "time": "2021-08-28T14:21:35+00:00"
+            "time": "2021-09-25T18:45:03+00:00"
         },
         {
             "name": "php-feather/security",
@@ -1134,12 +1134,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/support.git",
-                "reference": "ed42efdeda5f724498a641409314a2f664ff3c69"
+                "reference": "1f38cf70713bcf5cf7ff2a4745b33044107c0f53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/support/zipball/ed42efdeda5f724498a641409314a2f664ff3c69",
-                "reference": "ed42efdeda5f724498a641409314a2f664ff3c69",
+                "url": "https://api.github.com/repos/php-feather/support/zipball/1f38cf70713bcf5cf7ff2a4745b33044107c0f53",
+                "reference": "1f38cf70713bcf5cf7ff2a4745b33044107c0f53",
                 "shasum": ""
             },
             "require": {
@@ -1173,7 +1173,7 @@
                 "issues": "https://github.com/php-feather/support/issues",
                 "source": "https://github.com/php-feather/support/tree/main"
             },
-            "time": "2021-09-07T00:53:30+00:00"
+            "time": "2021-09-12T19:15:50+00:00"
         },
         {
             "name": "php-feather/view",
@@ -2168,16 +2168,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.3.2",
+            "version": "v3.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "21578f00e83d4a82ecfa3d50752b609f13de6790"
+                "reference": "a27fa056df8a6384316288ca8b0fa3a35fdeb569"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/21578f00e83d4a82ecfa3d50752b609f13de6790",
-                "reference": "21578f00e83d4a82ecfa3d50752b609f13de6790",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/a27fa056df8a6384316288ca8b0fa3a35fdeb569",
+                "reference": "a27fa056df8a6384316288ca8b0fa3a35fdeb569",
                 "shasum": ""
             },
             "require": {
@@ -2187,7 +2187,7 @@
             },
             "require-dev": {
                 "psr/container": "^1.0",
-                "symfony/phpunit-bridge": "^4.4.9|^5.0.9"
+                "symfony/phpunit-bridge": "^4.4.9|^5.0.9|^6.0"
             },
             "type": "library",
             "extra": {
@@ -2228,7 +2228,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.3.2"
+                "source": "https://github.com/twigphp/Twig/tree/v3.3.3"
             },
             "funding": [
                 {
@@ -2240,7 +2240,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-16T12:14:13+00:00"
+            "time": "2021-09-17T08:44:23+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

@@ -1,6 +1,8 @@
 <?php
 
 use Feather\Ignite\App;
+use Feather\Init\Http\Routing\Router;
+use Feather\App\Http\Requests\Request;
 
 require '../vendor/autoload.php';
 require '../config/system/constants.php';
@@ -26,31 +28,17 @@ $app = App::getInstance();
  * Add files you which to boot with the app
  */
 require BASE_PATH . 'bootstrap/app.php';
-$app->boot();
 
-/**
- * Start Session
- */
-$app->startSession();
-
-/**
- * Activate caching
- */
-$app->setCaching();
-
-/**
- * Configure Routing
- */
-$app->initRouter($route_config);
+$kernel = new Feather\App\Kernel($app, Router::getInstance());
 
 /**
  * Run application
  * Process requests and return responses
  */
-$app->run();
+$kernel->handle(Request::getInstance());
 
 /**
  * Terminate app
  */
-$app->end();
+$kernel->terminate();
 

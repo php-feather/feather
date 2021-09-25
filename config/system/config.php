@@ -14,7 +14,7 @@ $errors_config = [
 
 /**
  * Router configuration
- * Disabing autoRouting will also disable fallbackRouting
+ * Disabling autoRouting will also disable fallbackRouting
  */
 $route_config = [
     'autoRouting' => true,
