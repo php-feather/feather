@@ -3,6 +3,7 @@
 namespace Feather\App\Http\Controllers;
 
 use Feather\Init\Controller\Controller;
+use Feather\Cache\ICache;
 
 /**
  * Description of BaseController
@@ -12,9 +13,20 @@ use Feather\Init\Controller\Controller;
 class BaseController extends Controller
 {
 
+    /** @var string * */
     protected $viewPath = VIEWS_PATH;
+
+    /** @var \Feather\Cache\ICache * */
     protected $cache;
-    public $validateAnnotations = false;
+
+    /** @var bool * */
+    protected $validateAnnotations = true;
+
+    /**
+     * @var \Feather\View\IView|string Supported string values: blade, native, twig
+     *
+     */
+    protected $viewEngine = 'native';
 
     public function __construct()
     {
