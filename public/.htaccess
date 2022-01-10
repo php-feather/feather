@@ -65,8 +65,8 @@ RewriteRule ^ %1 [L,R=301]
 #RewriteCond %{REQUEST_FILENAME} !-d
 
 #comment next 2 lines below if you want to disable folder routing
-RewriteCond %{REQUEST_FILENAME} /.+\.php [NC]
-RewriteRule ^ index.php [QSA,L]
+#RewriteCond %{REQUEST_FILENAME} /.+\.php [NC]
+#RewriteRule ^ index.php [QSA,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !=/favicon.ico

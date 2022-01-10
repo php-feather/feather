@@ -27,5 +27,10 @@
         "post-create-project-cmd": [
             "php bin/envsetup.php"
         ]
+    },
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
     }
 }

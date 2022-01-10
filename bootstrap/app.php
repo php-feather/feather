@@ -2,6 +2,7 @@
 
 use Feather\Ignite\App;
 use Feather\Ignite\Environment;
+use Feather\Auth\Auth;
 
 $app = App::getInstance();
 
@@ -55,3 +56,8 @@ $app->setCaching();
  * Configure Routing
  */
 $app->initRouter($route_config);
+
+/**
+ * Enable authentication
+ */
+Auth::boot($app->container('auth'));

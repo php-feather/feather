@@ -2,14 +2,14 @@
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 
-$config = include '../config/database.php';
+$config = include '../config/eloquent-database.php';
 
 $capsule = new Capsule;
 
 
-foreach ($config['eloquent']['connections'] as $name => $conn) {
+foreach ($config['connections'] as $name => $conn) {
 
-    if (strcasecmp($name, $config['eloquent']['default']) == 0) {
+    if (strcasecmp($name, $config['default']) == 0) {
         $capsule->addConnection($conn);
     }
 

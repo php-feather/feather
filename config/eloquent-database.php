@@ -1,6 +1,7 @@
 <?php
 
-$database_connections = [
+//add additional database connections here and the add them in bootstrap/eloquent.php
+return [
     'default' => 'mysql',
     'connections' => [
         'mysql' => [
@@ -13,3 +14,4 @@ $database_connections = [
         ]
     ]
 ];
+
