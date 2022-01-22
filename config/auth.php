@@ -22,8 +22,8 @@ return [
             'samesite' => 'lax'
         ],
         'session' => [
-            'class'      => Feather\Auth\Guard\SessionGuard::class,
-            'identifier' => 'id',
+            'class'    => Feather\Auth\Guard\SessionGuard::class,
+            'identity' => 'id',
         ],
         'token'   => [
             'class'     => Feather\Auth\Guard\TokenGuard::class,
