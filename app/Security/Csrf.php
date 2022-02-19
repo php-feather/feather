@@ -42,9 +42,9 @@ class Csrf
     public function generateToken()
     {
         if ($this->token == null) {
-            $this->token = fa_encrypt(fs_csrf_token(CSRF_ID));
+            $this->token = fs_csrf_token(CSRF_ID);
         }
-        return $this->token;
+        return $this->token->getValue();
     }
 
     /**
@@ -54,11 +54,7 @@ class Csrf
      */
     public function setHeader()
     {
-        if ($this->token) {
-            header(CSRF_HEADER . ': ' . $this->token);
-            return;
-        }
-        throw new \RuntimeException('CSRF token has not been generated');
+        header(CSRF_HEADER . ': ' . $this->generateToken());
     }
 
 }
