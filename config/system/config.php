@@ -7,8 +7,8 @@ define('CSRF_HEADER', get_env('APP_CSRF_HEADER', 'X-XSRF'));
  */
 $errors_config = [
     'defaultFile' => 'errors.php',
-    'path' => 'resources/views/errors/',
-    'viewEngine' => 'native'
+    'path'        => 'resources/views/errors/',
+    'viewEngine'  => 'native'
 ];
 
 
@@ -17,23 +17,23 @@ $errors_config = [
  * Disabling autoRouting will also disable fallbackRouting
  */
 $route_config = [
-    'autoRouting' => true,
-    'fallbackRouting' => true,
-    'cache' => [
+    'autoRouting'      => true,
+    'fallbackRouting'  => true,
+    'cache'            => [
         'enabled' => true,
         //specify driver name - this is the key name
         //in drivers array in config/cache.php
-        'driver' => 'file'
+        'driver'  => 'file'
     ],
-    'controller' => [
-        'namespace' => "\\Feather\\App\\Http\\Controllers\\",
-        'default' => \Feather\App\Http\Controllers\WelcomeController::class,
+    'controller'       => [
+        'namespace'     => "\\Feather\\App\\Http\\Controllers\\",
+        'default'       => \Feather\App\Http\Controllers\WelcomeController::class,
         'baseDirectory' => 'app/Http/Controllers/',
     ],
     'registeredRoutes' => 'routes/routes.php',
-    'folderRouting' => [
-        'enabled' => true,
-        'path' => 'public/',
+    'folderRouting'    => [
+        'enabled'     => true,
+        'path'        => 'public/',
         'defaultFile' => 'index.php'
     ]
 ];

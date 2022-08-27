@@ -60,5 +60,7 @@ $app->initRouter($route_config);
 /**
  * Enable authentication
  */
-//uncomment to enable authentication
-//Auth::boot($app->container('auth'));
+if (($authenticator = $app->container('auth'))) {
+    Auth::boot($authenticator);
+}
+
