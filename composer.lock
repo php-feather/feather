@@ -631,6 +631,64 @@
             "time": "2021-10-25T19:16:02+00:00"
         },
         {
+            "name": "amphp/parallel-functions",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amphp/parallel-functions.git",
+                "reference": "04e92fcacfc921a56dfe12c23b3265e62593a7cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amphp/parallel-functions/zipball/04e92fcacfc921a56dfe12c23b3265e62593a7cb",
+                "reference": "04e92fcacfc921a56dfe12c23b3265e62593a7cb",
+                "shasum": ""
+            },
+            "require": {
+                "amphp/amp": "^2.0.3",
+                "amphp/parallel": "^1.4",
+                "amphp/serialization": "^1.0",
+                "laravel/serializable-closure": "^1.0",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "amphp/php-cs-fixer-config": "v2.x-dev",
+                "amphp/phpunit-util": "^2.0",
+                "phpunit/phpunit": "^9.5.11"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Amp\\ParallelFunctions\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Niklas Keller",
+                    "email": "me@kelunik.com"
+                }
+            ],
+            "description": "Parallel processing made simple.",
+            "support": {
+                "issues": "https://github.com/amphp/parallel-functions/issues",
+                "source": "https://github.com/amphp/parallel-functions/tree/v1.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/amphp",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-02-03T19:32:41+00:00"
+        },
+        {
             "name": "amphp/parser",
             "version": "v1.0.0",
             "source": {
@@ -1781,6 +1839,66 @@
             "time": "2019-05-29T19:02:31+00:00"
         },
         {
+            "name": "laravel/serializable-closure",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/serializable-closure.git",
+                "reference": "d78fd36ba031a1a695ea5a406f29996948d7011b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/d78fd36ba031a1a695ea5a406f29996948d7011b",
+                "reference": "d78fd36ba031a1a695ea5a406f29996948d7011b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "nesbot/carbon": "^2.61",
+                "pestphp/pest": "^1.21.3",
+                "phpstan/phpstan": "^1.8.2",
+                "symfony/var-dumper": "^5.4.11"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\SerializableClosure\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Nuno Maduro",
+                    "email": "nuno@laravel.com"
+                }
+            ],
+            "description": "Laravel Serializable Closure provides an easy and secure way to serialize closures in PHP.",
+            "keywords": [
+                "closure",
+                "laravel",
+                "serializable"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/serializable-closure/issues",
+                "source": "https://github.com/laravel/serializable-closure"
+            },
+            "time": "2022-08-26T15:25:27+00:00"
+        },
+        {
             "name": "league/uri",
             "version": "6.7.1",
             "source": {
@@ -2076,16 +2194,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.61.0",
+            "version": "2.62.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "bdf4f4fe3a3eac4de84dbec0738082a862c68ba6"
+                "reference": "01bc4cdefe98ef58d1f9cb31bdbbddddf2a88f7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/bdf4f4fe3a3eac4de84dbec0738082a862c68ba6",
-                "reference": "bdf4f4fe3a3eac4de84dbec0738082a862c68ba6",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/01bc4cdefe98ef58d1f9cb31bdbbddddf2a88f7a",
+                "reference": "01bc4cdefe98ef58d1f9cb31bdbbddddf2a88f7a",
                 "shasum": ""
             },
             "require": {
@@ -2174,7 +2292,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-06T12:41:24+00:00"
+            "time": "2022-09-02T07:48:13+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -2395,12 +2513,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/ignite.git",
-                "reference": "e05aaa8848a8ada9464c6226b26414a9610d3e08"
+                "reference": "93df4a26be74451f11c2ad0e209d6d48deddb12c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/ignite/zipball/e05aaa8848a8ada9464c6226b26414a9610d3e08",
-                "reference": "e05aaa8848a8ada9464c6226b26414a9610d3e08",
+                "url": "https://api.github.com/repos/php-feather/ignite/zipball/93df4a26be74451f11c2ad0e209d6d48deddb12c",
+                "reference": "93df4a26be74451f11c2ad0e209d6d48deddb12c",
                 "shasum": ""
             },
             "require": {
@@ -2439,7 +2557,7 @@
                 "issues": "https://github.com/php-feather/ignite/issues",
                 "source": "https://github.com/php-feather/ignite/tree/master"
             },
-            "time": "2022-08-27T16:35:33+00:00"
+            "time": "2022-08-27T18:04:39+00:00"
         },
         {
             "name": "php-feather/init",
@@ -2447,12 +2565,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/init.git",
-                "reference": "dcce6af5616e7aa428d8b24ede24acd4bd2143db"
+                "reference": "e1a02e361ce9850bccdd3cf50846da2f4b6c39e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/init/zipball/dcce6af5616e7aa428d8b24ede24acd4bd2143db",
-                "reference": "dcce6af5616e7aa428d8b24ede24acd4bd2143db",
+                "url": "https://api.github.com/repos/php-feather/init/zipball/e1a02e361ce9850bccdd3cf50846da2f4b6c39e8",
+                "reference": "e1a02e361ce9850bccdd3cf50846da2f4b6c39e8",
                 "shasum": ""
             },
             "require": {
@@ -2492,7 +2610,7 @@
                 "issues": "https://github.com/php-feather/init/issues",
                 "source": "https://github.com/php-feather/init/tree/master"
             },
-            "time": "2022-02-19T01:54:34+00:00"
+            "time": "2022-09-04T00:23:05+00:00"
         },
         {
             "name": "php-feather/security",
@@ -2500,12 +2618,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/security.git",
-                "reference": "32f543d981f9af6384ea72bcef62b8919a93249c"
+                "reference": "9013f2e4f81dcdc25ea26586f5d298c3701e3aa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/security/zipball/32f543d981f9af6384ea72bcef62b8919a93249c",
-                "reference": "32f543d981f9af6384ea72bcef62b8919a93249c",
+                "url": "https://api.github.com/repos/php-feather/security/zipball/9013f2e4f81dcdc25ea26586f5d298c3701e3aa8",
+                "reference": "9013f2e4f81dcdc25ea26586f5d298c3701e3aa8",
                 "shasum": ""
             },
             "require": {
@@ -2541,7 +2659,7 @@
                 "issues": "https://github.com/php-feather/security/issues",
                 "source": "https://github.com/php-feather/security/tree/master"
             },
-            "time": "2022-02-19T15:30:31+00:00"
+            "time": "2022-09-04T00:23:41+00:00"
         },
         {
             "name": "php-feather/session",
@@ -2595,17 +2713,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-feather/support.git",
-                "reference": "241e6a5059eceb7bdfe9ce4f776dd6af648d79c7"
+                "reference": "6865aeb0cc8c82dd0c262fd9ea36515ce5ea5bc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-feather/support/zipball/241e6a5059eceb7bdfe9ce4f776dd6af648d79c7",
-                "reference": "241e6a5059eceb7bdfe9ce4f776dd6af648d79c7",
+                "url": "https://api.github.com/repos/php-feather/support/zipball/6865aeb0cc8c82dd0c262fd9ea36515ce5ea5bc4",
+                "reference": "6865aeb0cc8c82dd0c262fd9ea36515ce5ea5bc4",
                 "shasum": ""
             },
             "require": {
                 "amphp/http-client": "^4.6",
                 "amphp/parallel": "^1.4",
+                "amphp/parallel-functions": "^1.1",
                 "opis/closure": "^3.6",
                 "php": ">=7.0"
             },
@@ -2637,7 +2756,7 @@
                 "issues": "https://github.com/php-feather/support/issues",
                 "source": "https://github.com/php-feather/support/tree/main"
             },
-            "time": "2022-01-29T23:25:13+00:00"
+            "time": "2022-09-03T23:58:48+00:00"
         },
         {
             "name": "php-feather/view",
